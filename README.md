@@ -18,4 +18,5 @@
         B -
 
 </ul>
-        ![](./_readme_folder/images/slide_line.gif)
+        ![](_readme_folder/images/slide_line.gif)
+        ![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
