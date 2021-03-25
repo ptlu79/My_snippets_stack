@@ -7,8 +7,7 @@
 
     1 - Link :
 
-        A - Slide Line : 
-        ![slide-line](./_readme_folder/images/slide-line.gif)
+        A - Slide Line
         B - 
         c -
 
@@ -18,4 +17,4 @@
         B -
 
 </ul>
-        ![slide-line](slide-line.gif)
+
