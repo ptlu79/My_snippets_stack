@@ -1,0 +1,53 @@
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+/* SLIDE LINE */
+
+.slide-line{
+    /* espace pour les lignes */
+    padding: 2px 0 2px 0;
+
+    font-size: 36px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+/* Ligne du bas */
+.slide-line::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    bottom: 0;
+    transform-origin: 100% 0;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+}
+.slide-line:hover::before{
+    transform-origin: 0 0;
+    transform: scalex(1);
+}
+/* Ligne du haut (à supprimer si besoin) */
+.slide-line::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    top: 0;
+    left: 0;
+    transform-origin: 0 100%;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+}
+.slide-line:hover::after{
+    transform-origin: 100% 0;
+    transform: scalex(1);
+}
+
+ /* END */
