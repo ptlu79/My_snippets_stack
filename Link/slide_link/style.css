@@ -1,0 +1,37 @@
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+/* SLIDE LINK */
+
+.slide-link{
+    font-size: 36px;
+    text-decoration: none;
+    color: black;
+
+    overflow: hidden;
+    position: relative;
+
+}
+.slide-link span {
+    padding: 10px;
+    display: inline-block;
+    transition: transform 0.5s ease-out;
+
+}
+.slide-link span:nth-child(2){
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 100%;
+
+    color: blue;
+    text-decoration: underline;
+}
+.slide-link:hover span {
+    transform: translateX(-100%);
+}
+ /* END */
