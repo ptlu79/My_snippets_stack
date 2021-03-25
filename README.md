@@ -18,4 +18,4 @@
         B -
 
 </ul>
-
+        ![](./_readme_folder/images/slide_line.gif)
