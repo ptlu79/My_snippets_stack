@@ -7,9 +7,9 @@
 
     1 - Link :
 
-        A - Slide Line
-        B - 
-        c -
+        A - Slide Line 
+        B - Slide Link (text)
+        c - cursor image hover ************* ERREUR A CORRIGER ***
 
     2 -
 
