@@ -8,7 +8,7 @@
     1 - Link :
 
         A - Slide Line : 
-        ![](./_readme_folder/images/slide_line.gif)
+        ![slide-line](./_readme_folder/images/slide-line.gif)
         B - 
         c -
 
@@ -18,5 +18,4 @@
         B -
 
 </ul>
-        ![](_readme_folder/images/slide_line.gif)
-        ![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+        ![slide-line](slide-line.gif)
