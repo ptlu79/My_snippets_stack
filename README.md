@@ -8,7 +8,7 @@
     1 - Link :
 
         A - Slide Line : 
-        ![alt text](./_readme_folder\images\slide_line.gif)
+        ![](./_readme_folder/images/slide_line.gif)
         B - 
         c -
 
