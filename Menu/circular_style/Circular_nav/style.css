@@ -4,60 +4,60 @@ body {
   overflow-x: hidden;
 }
 
-/*  */
+/* =========
+VARIABLES
+========= */
+:root {
+
+  --color: #B497E6;
+  --color_hover: #FFC745;
+  --bg_color: white;
+
+  --bg_image: url(./MyHead.png);
+
+  --font:
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+/* rajout 2eme menu */
 #other_style {
-  background-image: url(./MyHead.png);
+  background-image: var(--bg_image);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-color: red; */
 
 }
 
-/* info bulles via attribut html*/
+/* info bulles via attribut html SEO ...*/
 @media (min-width: 530px) {
 
-  /* a[title]:hover:after {
-  content: attr(title);
-  position: absolute;
-}
-a[aria-label]:hover:after {
-  content: attr(aria-label);
-  position: absolute;
-}
-a[alt]:hover:after {
-  content: attr(alt);
-  position: absolute;
-} */
   /* conseiller */
-  /* a[aria-labelledby]:hover::after {
-  content: attr(aria-labelledby);
-  position: absolute;
-} */
+
   a[aria-labelledby]:focus,
   a[aria-labelledby]:hover::after {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font);
     font-weight: 700;
     font-size: 16px;
     content: attr(aria-labelledby);
-
-    background-color: white;
-    color: #B497E6;
+    opacity: 0.8;
+    background-color: var(--bg_color);
+    color: var(--color);
     border-radius: 20px;
     max-height: 100%;
     width: 200%;
 
     position: absolute;
 
-    animation: bulle_animation 0.8s ease;
+    animation: bulle_animation 0.8s ease-in-out;
   }
 
   @keyframes bulle_animation {
-    from {
+    0% {
       transform: scaleX(0);
     }
-
-    to {
+    100% {
       transform: scaleX(1);
     }
   }
@@ -121,12 +121,33 @@ a[alt]:hover:after {
 }
 
 /* END info bulles */
+/*  */
+  .navbar,
+  .navbar a{
+    /* box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.600); */
+    animation: pulse 1.5s infinite ease-in-out;
+  }
+  @keyframes pulse{
+    0% {
+      box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.200);
+    }
+    50% {
+      box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.6);
+    }
+    100% {
+      box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.200);
+    }
+  }
+
+/*  */
+
+
 
 .navbar {
   width: 150px;
   height: 150px;
   line-height: 150px;
-  background: white;
+  background: var(--bg_color);
   margin: 250px auto;
   border-radius: 50%;
   position: relative;
@@ -134,7 +155,7 @@ a[alt]:hover:after {
   text-align: center;
   font-size: 2.75em;
   font-weight: bold;
-  color: #B497E6;
+  color: var(--color);
   transition: 0.24s 0.2s;
 }
 
@@ -176,15 +197,15 @@ a[alt]:hover:after {
   height: 45px;
   line-height: 45px;
   border-radius: 50%;
-  background: white;
+  background: var(--bg_color);
   position: absolute;
   font-size: 59%;
-  color: #B497E6;
+  color: var(--color);
   transition: all 0.7s
 }
 
 .navbar .menu li:hover a {
-  color: #FFC745;
+  color: var(--color_hover);
 }
 
 .navbar:hover .menu li:nth-child(1) {
