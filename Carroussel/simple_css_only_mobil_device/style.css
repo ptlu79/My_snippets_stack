@@ -1,0 +1,32 @@
+/* uniquement pour smartphone et tablette !!!!!!!!!!! */
+body {
+    overflow-y: hidden;
+}
+
+.slides {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+;
+}
+
+section {
+    height: 100vh;
+    min-width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-snap-align: start;
+}
+
+.section_1 {
+    background-image: url("https://images.unsplash.com/photo-1478104718532-efe04cc3ff7f");
+}
+
+.section_2 {
+    background-image: url("https://images.unsplash.com/photo-1472437774355-71ab6752b434");
+}
+
+.section_3 {
+    background-image: url("https://images.unsplash.com/photo-1572985025058-f27aeca1b8bf");
+}

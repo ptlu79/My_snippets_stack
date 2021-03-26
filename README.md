@@ -15,8 +15,13 @@
     2 - Menu :
 
         A - Burger Style :
-            1️ - Floating circle navigation
+            1️ - Floating circle navigation - CSS & JS
+            2 - push left - css only
         B - 
+
+    3 - Carroussel :
+
+        A - 📲 Simple device mobil - CSS only & tactil device view
 
 </ul>
 
