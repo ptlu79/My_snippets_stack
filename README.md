@@ -17,7 +17,9 @@
         A - Burger Style :
             1️ - Floating circle navigation - CSS & JS
             2 - push left - css only
-        B - 
+            
+        B - Circular style:
+            1 - Circular Nav - CSS only
 
     3 - Carroussel :
 
