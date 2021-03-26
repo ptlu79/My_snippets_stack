@@ -19,6 +19,10 @@ VARIABLES
     Arial,
     Helvetica,
     sans-serif;
+
+  --pulse_anim_in:rgba(0, 0, 0, 0.100);
+  --pulse_anim_out:rgba(0, 0, 0, 0.35);
+
 }
 
 /* rajout 2eme menu */
@@ -129,13 +133,13 @@ VARIABLES
   }
   @keyframes pulse{
     0% {
-      box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.200);
+      box-shadow: 1px 0px 10px var(--pulse_anim_in);
     }
     50% {
-      box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.6);
+      box-shadow: 1px 0px 20px var(--pulse_anim_out);
     }
     100% {
-      box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.200);
+      box-shadow: 1px 0px 10px var(--pulse_anim_in);
     }
   }
 
